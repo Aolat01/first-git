@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+}
+.hamb{display: none;}
+.hero{
+    background-image:url(img/our\ ceo.jpg); 
+    ;background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+
+}
+
+.herotext h1{
+    font-size: 80px;
+    font-weight: 900;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    align-items: center;
+}
+.herotext p{ font-size: 20px;
+    font-weight: 400;
+ text-align: center;
+}
+.herotext button{
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px white;
+    width: 200px;
+    background-color: green;
+    color: white;
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+
+
+
+@media screen and (max-width:850px) {
+ul{display: none;}
+.hamb{display: block;}
+nav{justify-content: space-between;}
+.herotext h1{
+    font-size: 40px;
+    font-weight: 900;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-left: 300px;
+}
+.herotext p{ font-size: 15px;
+    font-weight: 400;
+    width: 40%;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;}
+}
